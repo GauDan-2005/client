@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 1rem;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.form button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #8a2b06;
+  border: 1px solid #8a2b06;
+  color: white;
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.form label {
+  font-weight: 700;
+}
+
+.form input {
+  width: 3rem;
+  font-weight: 500;
+  /* border-color:; */
+  border: 0.0625rem solid #a9a9a9;
+  border-radius: 0.25rem;
+}
+
+.form input:focus {
+  /* border: none; */
+  outline: none;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #641e03;
+  border-color: #641e03;
+}

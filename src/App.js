@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef, useState } from "react";
+import Header from "./components/Static/Header";
+import Meals from "./components/Meals/Meals";
+import Cart from "./components/Cart/Cart";
+import Footer from "./components/Static/footer/Footer";
+
+import styles from "./App.module.css";
+import { DUMMY_MEALS } from "./dummy-meals";
 
 function App() {
+  // function changeQuantity(id) {}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <Header />
+      <Meals mealList={DUMMY_MEALS} />
+      {/* <Cart cartItemList={DUMMY_MEALS} /> */}
+      <Footer />
     </div>
   );
 }
