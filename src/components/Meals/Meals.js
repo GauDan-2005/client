@@ -11,6 +11,7 @@ const Meals = (props) => {
         <div>
           <MealItem
             key={item.id}
+            id={item.id}
             name={item.name}
             desc={item.description}
             price={item.price}
