@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import CartContext from "../../context/CartContext";
 
 import styles from "./CartItem.module.css";
 
 const CartItem = (props) => {
+  const ctx = useContext(CartContext);
   return (
     <div className={styles["cart-item"]}>
       <div>
@@ -12,9 +14,24 @@ const CartItem = (props) => {
           <p className={styles.amount}>x{props.quantity}</p>
         </div>
       </div>
-      <div className={styles.actions}>
-        <button>+</button>
-        <button>-</button>
+      <div className={styles.summary}>
+        <p>${props.totalPrice.toFixed(2)}</p>
+        <div className={styles.actions}>
+          <button
+            onClick={() => {
+              ctx.dereaseQuantity(props.id);
+            }}
+          >
+            -
+          </button>
+          <button
+            onClick={() => {
+              ctx.increaseQuantity(props.id);
+            }}
+          >
+            +
+          </button>
+        </div>
       </div>
     </div>
   );

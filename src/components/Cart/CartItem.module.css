@@ -3,6 +3,20 @@ p {
   padding: 0;
 }
 
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.summary p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8a2b06;
+}
+
 .cart-item {
   display: flex;
   justify-content: space-between;

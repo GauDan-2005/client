@@ -15,7 +15,7 @@ function App() {
     <div className={styles.app}>
       <Header />
       <Meals mealList={DUMMY_MEALS} />
-      {ctx.cartButton && <Cart cartItemList={DUMMY_MEALS} />}
+      {ctx.cartButton && <Cart />}
       <Footer />
     </div>
   );

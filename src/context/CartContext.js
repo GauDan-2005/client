@@ -55,6 +55,13 @@ export const CartContextProvider = (props) => {
     setCartList((prev) => [...prev, item]);
   }
 
+  function logOrder() {
+    console.log("Ordering...");
+    console.log(cartList);
+    CartIsClicked();
+    setCartList([]);
+  }
+
   // console.log(cartList);
 
   return (
@@ -68,6 +75,7 @@ export const CartContextProvider = (props) => {
         CartIsClicked,
         cartButton,
         displayAmount,
+        logOrder,
       }}
     >
       {props.children}
