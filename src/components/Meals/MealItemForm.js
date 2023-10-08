@@ -1,15 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import styles from "./MealItemForm.module.css";
 import CartContext from "../../context/CartContext";
 
 const MealItemForm = (props) => {
   const ctx = useContext(CartContext);
-  const [q, setQ] = useState(0);
-
-  useEffect(
-    () => setQ(ctx.displayAmount(props.id)),
-    [ctx, ctx.cartList, props.id]
-  );
 
   return (
     <form className={styles.form}>
