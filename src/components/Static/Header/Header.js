@@ -3,7 +3,7 @@ import Title from "./Title";
 import HeaderCartButton from "./HeaderCartButton";
 
 import styles from "./Header.module.css";
-import Cover_Image from "../Constants/Image";
+import Cover_Image from "../../Constants/Image";
 
 const Header = () => {
   return (

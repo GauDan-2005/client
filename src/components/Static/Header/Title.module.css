@@ -1,0 +1,25 @@
+.title {
+  margin-top: 15rem;
+  width: 100%;
+  max-width: 60%;
+  background: #555555;
+  z-index: 5;
+  /* flex-grow: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  gap: 0.8rem;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.para {
+  align-items: center;
+  color: #fcfcfc;
+  text-align: center;
+  flex-grow: 1;
+}

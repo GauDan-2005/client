@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 
 import styles from "./HeaderCartButton.module.css";
-import CartIcon from "../Constants/CartIcon";
-import CartContext from "../../context/CartContext";
+import CartIcon from "../../Constants/CartIcon";
+import CartContext from "../../../context/CartContext";
 
 const HeaderCartButton = () => {
   const ctx = useContext(CartContext);

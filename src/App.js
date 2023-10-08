@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Header from "./components/Static/Header";
+import Header from "./components/Static/Header/Header";
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
 import Footer from "./components/Static/footer/Footer";
