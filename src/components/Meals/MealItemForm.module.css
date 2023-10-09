@@ -64,6 +64,11 @@
   gap: 1rem;
 }
 
+.cart-item {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .cart-item button {
   font: inherit;
   font-weight: bold;
